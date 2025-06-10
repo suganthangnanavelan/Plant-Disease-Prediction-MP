@@ -5,7 +5,6 @@
 ![Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-ff4b4b)
 ![PyTorch](https://img.shields.io/badge/Framework-PyTorch-red)
 ![Platform](https://img.shields.io/badge/Platform-Web%20App-lightgrey)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 A plant disease detection application built with Streamlit and PyTorch. This project uses Inception V3 deep learning models to classify plant diseases and provides visual explanations through Grad-CAMs.
 
@@ -17,6 +16,10 @@ A plant disease detection application built with Streamlit and PyTorch. This pro
 - Feature map analysis to understand how the neural network processes images
 - Web-based interface that's easy to use
 - Confidence scores for each prediction
+
+## Dataset Source
+
+This project uses the [PlantVillage Dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset), a comprehensive collection of labeled plant disease images from Kaggle.
 
 ## Project Structure
 
