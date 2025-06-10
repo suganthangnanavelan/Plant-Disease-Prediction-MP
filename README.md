@@ -27,19 +27,21 @@ The project is organized as follows:
 
 ```
 plant-disease-detection/
-├── app.py                 # Main Streamlit application
-├── utils.py              # Model loading and preprocessing utilities
-├── gradcam.py            # Grad-CAM implementation
-├── requirements.txt      # Python dependencies
-├── .gitignore           # Git ignore file
-├── README.md            # This file
-├── models/              # Directory for trained model files
+├── app.py                            # Main Streamlit application
+├── utils.py                          # Model loading and preprocessing utilities
+├── gradcam.py                        # Grad-CAM implementation
+├── requirements.txt                  # Python dependencies
+├── .gitignore                        # Git ignore file
+├── README.md                         # This file
+├── models/                           # Directory for trained model files
 │   ├── inception_v3_model_apple.pth
 │   ├── inception_v3_model_pepper.pth
 │   ├── inception_v3_model_corn.pth
 │   └── inception_v3_model_potato.pth
-├── groot.gif            # Animated GIF for the interface
-└── download_icon.png    # Download button icon
+├── training/
+│   └── Final Inceptionv3 Model.ipynb # Model training
+├── groot.gif                         # Animated GIF for the interface
+└── download_icon.png                 # Download button icon
 ```
 
 ### Installation Steps
@@ -49,8 +51,8 @@ plant-disease-detection/
 First, download or clone this repository to your computer.
 
 ```bash
-git clone https://github.com/yourusername/plant-disease-detection.git
-cd plant-disease-detection
+git clone https://github.com/suganthangnanavelan/Plant-Disease-Prediction-MP.git
+cd Plant-Disease-Prediction-MP
 ```
 
 #### Step 2: Set Up a Virtual Environment
@@ -82,14 +84,6 @@ Once everything is set up, you can start the application:
 
 ```bash
 streamlit run app.py
-```
-
-Your web browser should automatically open to `http://localhost:8501`.
-
-If port 8501 is already being used, you can try a different port:
-
-```bash
-streamlit run app.py --server.port 8502
 ```
 
 ## How to Use the Application
