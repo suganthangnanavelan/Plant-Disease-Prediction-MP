@@ -74,7 +74,7 @@ source venv/bin/activate
 #### Step 3: Install the Required Packages
 
 ```bash
-pip install --upgrade pip
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
